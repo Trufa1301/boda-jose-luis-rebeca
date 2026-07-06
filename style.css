@@ -1,1 +1,121 @@
+body{
+    margin:0;
+    font-family:'Cormorant Garamond',serif;
+    background:#faf7f2;
+    color:#4a3c39;
+}
 
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(180deg,#fffdfb,#f7f1eb);
+}
+
+.contenido{
+    max-width:650px;
+}
+
+.intro{
+    font-size:32px;
+    color:#8c4a5d;
+    font-family:'Cormorant Garamond',serif;
+    margin-bottom:10px;
+}
+
+h1{
+    font-family:'Great Vibes',cursive;
+    font-size:90px;
+    line-height:0.95;
+    font-weight:400;
+    margin:0;
+}
+
+h1 span{
+    font-size:60px;
+}
+
+.linea{
+    width:120px;
+    height:2px;
+    background:#8c4a5d;
+    margin:30px auto;
+}
+
+.fecha{
+    font-size:30px;
+    letter-spacing:2px;
+}
+
+.lugar{
+    font-size:24px;
+    margin-top:10px;
+}
+
+.texto{
+    margin:40px auto;
+    font-size:24px;
+    line-height:1.6;
+    max-width:520px;
+}
+
+.boton{
+    display:inline-block;
+    text-decoration:none;
+    background:#8c4a5d;
+    color:white;
+    padding:16px 40px;
+    border-radius:50px;
+    font-size:22px;
+    transition:.3s;
+}
+
+.boton:hover{
+    transform:scale(1.05);
+}
+
+#formulario{
+    padding:80px 20px;
+    text-align:center;
+    background:white;
+}
+
+#formulario h2{
+    font-size:46px;
+}
+
+#formulario p{
+    font-size:24px;
+}
+
+@media(max-width:700px){
+
+h1{
+    font-size:62px;
+}
+
+.intro{
+    font-size:24px;
+}
+
+.fecha{
+    font-size:22px;
+}
+
+.lugar{
+    font-size:20px;
+}
+
+.texto{
+    font-size:20px;
+}
+
+.boton{
+    font-size:20px;
+    padding:14px 30px;
+}
+
+}
