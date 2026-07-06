@@ -121,4 +121,64 @@ h1 span{
     .contenido{
         padding:35px 20px;
     }
+.contador{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.contador h2{
+    font-size:28px;
+    color:#8b4b55;
+    margin-bottom:25px;
+    font-weight:400;
+}
+
+.tiempo{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.tiempo div{
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(4px);
+    padding:18px 22px;
+    border-radius:18px;
+    min-width:90px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.tiempo span{
+    display:block;
+    font-size:42px;
+    font-weight:600;
+    color:#8b4b55;
+}
+
+.tiempo p{
+    margin-top:8px;
+    font-size:18px;
+    color:#555;
+}
+
+@media(max-width:768px){
+
+    .tiempo{
+        gap:12px;
+    }
+
+    .tiempo div{
+        min-width:70px;
+        padding:15px;
+    }
+
+    .tiempo span{
+        font-size:30px;
+    }
+
+    .tiempo p{
+        font-size:15px;
+    }
+
 }
