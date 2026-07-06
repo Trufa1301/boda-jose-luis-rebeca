@@ -1,1 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&display=swap');
 
+body{
+    margin:0;
+    font-family:'Cormorant Garamond', serif;
+    color:#4a3c39;
+
+    background-image: url("fondo.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+  text-align:center;
+padding:40px 20px;
+  
+background:none
+}
+
+.contenido{
+max-width:750px;
+text-align:center;
+}
+
+.intro{
+font-size:34px;
+color:#9b5b63;
+margin:0;
+}
+
+h1{
+font-family:'Great Vibes',cursive;
+font-size:110px;
+font-weight:normal;
+line-height:1;
+margin:15px 0;
+color:#222;
+}
+
+h1 span{
+font-size:70px;
+}
+
+.linea{
+width:180px;
+height:1px;
+background:#d7c5b8;
+margin:25px auto;
+}
+
+.fecha{
+font-size:34px;
+letter-spacing:3px;
+}
+
+.lugar{
+font-size:28px;
+margin-bottom:30px;
+}
+
+.texto{
+font-size:28px;
+line-height:1.6;
+max-width:600px;
+margin:auto;
+margin-bottom:40px;
+}
+
+.boton{
+display:inline-block;
+padding:18px 45px;
+background:#8c5a5e;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-size:24px;
+transition:.3s;
+}
+
+.boton:hover{
+background:#6f4448;
+}
+
+#formulario{
+padding:80px 20px;
+background:white;
+text-align:center;
+}
+
+h2{
+font-family:'Great Vibes',cursive;
+font-size:70px;
+margin-bottom:10px;
+}
+
+@media(max-width:700px){
+
+h1{
+font-size:75px;
+}
+
+.intro{
+font-size:26px;
+}
+
+.fecha{
+font-size:24px;
+}
+
+.lugar{
+font-size:22px;
+}
+
+.texto{
+font-size:22px;
+}
+
+.boton{
+font-size:20px;
+padding:15px 35px;
+}
+
+h2{
+font-size:52px;
+}
+
+}
