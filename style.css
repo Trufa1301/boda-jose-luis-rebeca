@@ -279,17 +279,18 @@ iframe{
 
 #regalo{
     padding:80px 20px;
-    text-align:center;
 }
 
 .iban{
-    background:#fff;
-    padding:20px;
+    background:white;
+    max-width:500px;
     margin:30px auto;
-    max-width:450px;
-    border-radius:15px;
-    font-size:22px;
-    letter-spacing:2px;
+    padding:20px;
+    border-radius:18px;
     box-shadow:0 8px 25px rgba(0,0,0,.08);
+    font-size:24px;
+    letter-spacing:2px;
+    text-align:center;
+    font-weight:600;
 }
 
