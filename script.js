@@ -1,2 +1,3 @@
-alert("Script cargado");
-document.getElementById("dias").textContent = "999";
+window.onload = function() {
+  alert("Script cargado");
+};
