@@ -1,14 +1,14 @@
-const boda = new Date("2026-10-24T11:30:00").getTime();
+const fechaBoda = new Date(2026, 9, 24, 11, 30, 0);
 
-function actualizarCuentaAtras(){
+function actualizarCuentaAtras() {
 
-    const ahora = new Date().getTime();
-    const diferencia = boda - ahora;
+    const ahora = new Date();
+    const diferencia = fechaBoda.getTime() - ahora.getTime();
 
-    const dias = Math.floor(diferencia / (1000*60*60*24));
-    const horas = Math.floor((diferencia % (1000*60*60*24))/(1000*60*60));
-    const minutos = Math.floor((diferencia % (1000*60*60))/(1000*60));
-    const segundos = Math.floor((diferencia % (1000*60))/1000);
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+    const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+    const segundos = Math.floor((diferencia / 1000) % 60);
 
     document.getElementById("dias").textContent = dias;
     document.getElementById("horas").textContent = horas;
@@ -18,4 +18,4 @@ function actualizarCuentaAtras(){
 }
 
 actualizarCuentaAtras();
-setInterval(actualizarCuentaAtras,1000);
+setInterval(actualizarCuentaAtras, 1000);
