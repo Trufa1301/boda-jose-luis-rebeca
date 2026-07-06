@@ -1,4 +1,4 @@
-const boda = new Date("October 24, 2026 11:30:00").getTime();
+const boda = new Date("2026-10-24T11:30:00").getTime();
 
 function actualizarCuentaAtras(){
 
