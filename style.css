@@ -27,6 +27,40 @@ color:#9b5b63;
 margin:0;
 }
 
+.contador {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f7f3f4;
+}
+
+.contador h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.tiempo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tiempo div {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  min-width: 90px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tiempo span {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  color: #b76e79;
+}
+
+
 h1{
 font-family:'Great Vibes',cursive;
 font-size:110px;
