@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&display=swap');
 
 *{
     margin:0;
@@ -6,15 +6,19 @@
     box-sizing:border-box;
 }
 
-body{
-    font-family:'Cormorant Garamond', serif;
-    color:#4a3c39;
+html{
+    scroll-behavior:smooth;
+}
 
-    background-image:url("fondo.JPG");
+body{
+    font-family:'Cormorant Garamond',serif;
+    color:#4b3d39;
+    background:#f8f4ef;
+    background-image:url("Fondo.jpg.JPG");
     background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;
     background-attachment:fixed;
+    background-repeat:no-repeat;
 }
 
 .hero{
@@ -22,30 +26,33 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    text-align:center;
-    padding:60px 20px;
+    padding:40px 20px;
 }
 
 .contenido{
-    max-width:750px;
-    background:rgba(255,255,255,.70);
-    padding:50px 35px;
+    width:100%;
+    max-width:760px;
+    background:rgba(255,255,255,.82);
+    backdrop-filter:blur(6px);
     border-radius:30px;
-    backdrop-filter:blur(3px);
+    padding:60px 40px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
 }
 
 .intro{
+    color:#8d4e5f;
     font-size:34px;
-    color:#9b5b63;
+    margin-top:30px;
 }
 
 h1{
-    font-family:'Great Vibes', cursive;
-    font-size:110px;
-    font-weight:normal;
+    font-family:'Great Vibes',cursive;
+    font-size:105px;
+    font-weight:400;
     line-height:1;
-    color:#222;
-    margin:15px 0;
+    color:#2d2d2d;
+    margin:20px 0;
 }
 
 h1 span{
@@ -55,55 +62,145 @@ h1 span{
 .linea{
     width:140px;
     height:1px;
-    background:#d8c8be;
+    background:#d5bfb5;
     margin:35px auto;
 }
 
 .fecha{
-    font-size:28px;
-    letter-spacing:3px;
-    margin-bottom:25px;
+    font-size:30px;
+    letter-spacing:2px;
+    margin-bottom:12px;
 }
 
 .lugar{
     font-size:24px;
-    margin-bottom:45px;
+    color:#666;
+    margin-bottom:35px;
 }
 
 .texto{
-    font-size:22px;
+    font-size:24px;
     line-height:1.7;
     margin-bottom:45px;
 }
 
+.contador{
+    margin-bottom:40px;
+}
+
+.contador h3{
+    color:#8d4e5f;
+    font-size:30px;
+    font-weight:500;
+    margin-bottom:25px;
+}
+
+.tiempo{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.tiempo div{
+    background:rgba(255,255,255,.92);
+    border:1px solid rgba(141,78,95,.15);
+    border-radius:20px;
+    min-width:95px;
+    padding:18px 12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.tiempo span{
+    display:block;
+    font-size:42px;
+    font-weight:700;
+    color:#8d4e5f;
+}
+
+.tiempo p{
+    margin-top:8px;
+    font-size:18px;
+    color:#666;
+}
+
 .boton{
     display:inline-block;
-    background:#8b4b55;
+    margin-top:15px;
+    padding:18px 48px;
+    background:#8d4e5f;
     color:white;
     text-decoration:none;
-    padding:18px 48px;
     border-radius:50px;
     font-size:22px;
     transition:.3s;
 }
 
 .boton:hover{
-    background:#6d3841;
+    background:#74404d;
     transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
 }
 
-@media(max-width:768px){
+#formulario{
+    background:rgba(255,255,255,.90);
+    margin:80px auto;
+    max-width:900px;
+    border-radius:30px;
+    padding:70px 40px;
+    text-align:center;
+}
 
-    h1{
-        font-size:78px;
+#formulario h2{
+    font-family:'Great Vibes',cursive;
+    font-size:70px;
+    color:#8d4e5f;
+    margin-bottom:20px;
+}
+
+#formulario p{
+    font-size:24px;
+    color:#555;
+}
+
+@media (max-width:768px){
+
+    .contenido{
+        padding:35px 20px;
+        border-radius:20px;
     }
 
-    h1 span{
-        font-size:52px;
+    .contador h3{
+        font-size:22px;
+    }
+
+    .tiempo{
+        gap:10px;
+    }
+
+    .tiempo div{
+        min-width:70px;
+        padding:14px 10px;
+    }
+
+    .tiempo span{
+        font-size:30px;
+    }
+
+    .tiempo p{
+        font-size:14px;
     }
 
     .intro{
-        font-size:28px;
+        font-size:26px;
+    }
+
+    h1{
+        font-size:72px;
+    }
+
+    h1 span{
+        font-size:48px;
     }
 
     .fecha{
@@ -115,70 +212,27 @@ h1 span{
     }
 
     .texto{
+        font-size:19px;
+    }
+
+    .boton{
+        width:100%;
+        max-width:320px;
         font-size:20px;
+        padding:16px;
     }
 
-    .contenido{
-        padding:35px 20px;
-    }
-.contador{
-    text-align:center;
-    margin-bottom:50px;
-}
-
-.contador h2{
-    font-size:28px;
-    color:#8b4b55;
-    margin-bottom:25px;
-    font-weight:400;
-}
-
-.tiempo{
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    flex-wrap:wrap;
-}
-
-.tiempo div{
-    background:rgba(255,255,255,.75);
-    backdrop-filter:blur(4px);
-    padding:18px 22px;
-    border-radius:18px;
-    min-width:90px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-}
-
-.tiempo span{
-    display:block;
-    font-size:42px;
-    font-weight:600;
-    color:#8b4b55;
-}
-
-.tiempo p{
-    margin-top:8px;
-    font-size:18px;
-    color:#555;
-}
-
-@media(max-width:768px){
-
-    .tiempo{
-        gap:12px;
+    #formulario{
+        margin:40px 15px;
+        padding:40px 20px;
     }
 
-    .tiempo div{
-        min-width:70px;
-        padding:15px;
+    #formulario h2{
+        font-size:52px;
     }
 
-    .tiempo span{
-        font-size:30px;
-    }
-
-    .tiempo p{
-        font-size:15px;
+    #formulario p{
+        font-size:20px;
     }
 
 }
