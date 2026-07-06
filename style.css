@@ -14,11 +14,6 @@ body{
     font-family:'Cormorant Garamond',serif;
     color:#4b3d39;
     background:#f8f4ef;
-    background-image:url("Fondo.jpg.JPG");
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-    background-repeat:no-repeat;
 }
 
 .hero{
@@ -30,29 +25,27 @@ body{
 }
 
 .contenido{
+    max-width:800px;
     width:100%;
-    max-width:760px;
-    background:rgba(255,255,255,.82);
-    backdrop-filter:blur(6px);
-    border-radius:30px;
-    padding:60px 40px;
     text-align:center;
-    box-shadow:0 15px 40px rgba(0,0,0,.12);
+    background:rgba(255,255,255,.88);
+    padding:60px 45px;
+    border-radius:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
 }
 
 .intro{
-    color:#8d4e5f;
     font-size:34px;
-    margin-top:30px;
+    color:#8a4f5f;
+    margin-bottom:15px;
 }
 
 h1{
     font-family:'Great Vibes',cursive;
     font-size:105px;
-    font-weight:400;
     line-height:1;
-    color:#2d2d2d;
-    margin:20px 0;
+    font-weight:400;
+    margin-bottom:20px;
 }
 
 h1 span{
@@ -62,25 +55,25 @@ h1 span{
 .linea{
     width:140px;
     height:1px;
-    background:#d5bfb5;
-    margin:35px auto;
+    background:#bfa79b;
+    margin:30px auto;
 }
 
 .fecha{
     font-size:30px;
     letter-spacing:2px;
-    margin-bottom:12px;
+    margin-bottom:10px;
 }
 
 .lugar{
     font-size:24px;
-    color:#666;
-    margin-bottom:35px;
+    color:#6b6663;
+    margin-bottom:40px;
 }
 
 .texto{
     font-size:24px;
-    line-height:1.7;
+    line-height:1.6;
     margin-bottom:45px;
 }
 
@@ -89,25 +82,24 @@ h1 span{
 }
 
 .contador h3{
-    color:#8d4e5f;
-    font-size:30px;
-    font-weight:500;
+    color:#8a4f5f;
+    font-size:28px;
     margin-bottom:25px;
+    font-weight:500;
 }
 
 .tiempo{
     display:flex;
     justify-content:center;
-    gap:18px;
+    gap:20px;
     flex-wrap:wrap;
 }
 
 .tiempo div{
-    background:rgba(255,255,255,.92);
-    border:1px solid rgba(141,78,95,.15);
-    border-radius:20px;
-    min-width:95px;
-    padding:18px 12px;
+    background:white;
+    padding:18px;
+    min-width:90px;
+    border-radius:18px;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
@@ -115,92 +107,57 @@ h1 span{
     display:block;
     font-size:42px;
     font-weight:700;
-    color:#8d4e5f;
+    color:#8a4f5f;
 }
 
 .tiempo p{
-    margin-top:8px;
-    font-size:18px;
-    color:#666;
+    margin-top:6px;
+    font-size:17px;
 }
 
 .boton{
     display:inline-block;
-    margin-top:15px;
-    padding:18px 48px;
-    background:#8d4e5f;
+    background:#8a4f5f;
     color:white;
     text-decoration:none;
+    padding:18px 48px;
     border-radius:50px;
     font-size:22px;
     transition:.3s;
 }
 
 .boton:hover{
-    background:#74404d;
+    background:#6f3e4c;
     transform:translateY(-3px);
-    box-shadow:0 12px 25px rgba(0,0,0,.15);
 }
 
 #formulario{
-    background:rgba(255,255,255,.90);
-    margin:80px auto;
-    max-width:900px;
-    border-radius:30px;
-    padding:70px 40px;
+    padding:90px 20px;
     text-align:center;
 }
 
 #formulario h2{
     font-family:'Great Vibes',cursive;
-    font-size:70px;
-    color:#8d4e5f;
+    font-size:64px;
     margin-bottom:20px;
 }
 
 #formulario p{
     font-size:24px;
-    color:#555;
 }
 
-@media (max-width:768px){
-
-    .contenido{
-        padding:35px 20px;
-        border-radius:20px;
-    }
-
-    .contador h3{
-        font-size:22px;
-    }
-
-    .tiempo{
-        gap:10px;
-    }
-
-    .tiempo div{
-        min-width:70px;
-        padding:14px 10px;
-    }
-
-    .tiempo span{
-        font-size:30px;
-    }
-
-    .tiempo p{
-        font-size:14px;
-    }
-
-    .intro{
-        font-size:26px;
-    }
+@media(max-width:768px){
 
     h1{
         font-size:72px;
     }
 
     h1 span{
-        font-size:48px;
+        font-size:46px;
+    }
+
+    .intro{
+        font-size:26px;
     }
 
     .fecha{
@@ -215,24 +172,18 @@ h1 span{
         font-size:19px;
     }
 
+    .tiempo div{
+        min-width:70px;
+        padding:14px;
+    }
+
+    .tiempo span{
+        font-size:28px;
+    }
+
     .boton{
         width:100%;
         max-width:320px;
-        font-size:20px;
-        padding:16px;
-    }
-
-    #formulario{
-        margin:40px 15px;
-        padding:40px 20px;
-    }
-
-    #formulario h2{
-        font-size:52px;
-    }
-
-    #formulario p{
-        font-size:20px;
     }
 
 }
