@@ -1,2 +1,2 @@
-# boda-jose--luis-rebeca
+# boda-jose-luis-rebeca
 Web de la boda
