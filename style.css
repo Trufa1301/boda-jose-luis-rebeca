@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&display=swap');
 
 body{
-margin:0;
-background:#fcfaf6;
-font-family:'Cormorant Garamond',serif;
-color:#4f453e;
+    margin:0;
+    font-family:'Cormorant Garamond', serif;
+    color:#4a3c39;
+
+    background-image: url("fondo.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .hero{
@@ -13,9 +18,9 @@ display:flex;
 justify-content:center;
 align-items:center;
 padding:40px 20px;
-background:rgba (255,255,255,0.55);
-  background-filter:blur(2px);
-}
+background: rgba (255,255,255,0.55);
+  backdrop-filter: blur(2px);
+
 
 .contenido{
 max-width:750px;
