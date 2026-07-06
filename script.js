@@ -18,3 +18,10 @@ function actualizarCuentaAtras() {
 
 actualizarCuentaAtras();
 setInterval(actualizarCuentaAtras, 1000);
+
+function copiarIBAN() {
+
+    navigator.clipboard.writeText("ES00 0000 0000 0000 0000 0000");
+
+    alert("¡Número de cuenta copiado!");
+}
