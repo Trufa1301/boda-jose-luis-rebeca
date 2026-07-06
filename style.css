@@ -1,166 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&display=swap');
 
-body{
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     font-family:'Cormorant Garamond', serif;
     color:#4a3c39;
 
-    background-image: url("fondo.JPG");
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    background-attachment: fixed;
+    background-image:url("Fondo.jpg.JPG");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 }
 
 .hero{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:40px 20px;
-background: rgba (255,255,255,0.55);
-  backdrop-filter: blur(2px);
-
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:60px 20px;
 }
+
 .contenido{
-max-width:750px;
-text-align:center;
+    max-width:750px;
+    background:rgba(255,255,255,.70);
+    padding:50px 35px;
+    border-radius:30px;
+    backdrop-filter:blur(3px);
 }
 
 .intro{
-font-size:34px;
-color:#9b5b63;
-margin:0;
+    font-size:34px;
+    color:#9b5b63;
 }
-
-.contador {
-  text-align: center;
-  padding: 60px 20px;
-  background: #f7f3f4;
-}
-
-.contador h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-.tiempo {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.tiempo div {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  min-width: 90px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.tiempo span {
-  font-size: 2rem;
-  font-weight: bold;
-  display: block;
-  color: #b76e79;
-}
-
 
 h1{
-font-family:'Great Vibes',cursive;
-font-size:110px;
-font-weight:normal;
-line-height:1;
-margin:15px 0;
-color:#222;
+    font-family:'Great Vibes', cursive;
+    font-size:110px;
+    font-weight:normal;
+    line-height:1;
+    color:#222;
+    margin:15px 0;
 }
 
 h1 span{
-font-size:70px;
+    font-size:70px;
 }
 
 .linea{
-width:180px;
-height:1px;
-background:#d7c5b8;
-margin:25px auto;
+    width:140px;
+    height:1px;
+    background:#d8c8be;
+    margin:35px auto;
 }
 
 .fecha{
-font-size:34px;
-letter-spacing:3px;
+    font-size:28px;
+    letter-spacing:3px;
+    margin-bottom:25px;
 }
 
 .lugar{
-font-size:28px;
-margin-bottom:30px;
+    font-size:24px;
+    margin-bottom:45px;
 }
 
 .texto{
-font-size:28px;
-line-height:1.6;
-max-width:600px;
-margin:auto;
-margin-bottom:40px;
+    font-size:22px;
+    line-height:1.7;
+    margin-bottom:45px;
 }
 
 .boton{
-display:inline-block;
-padding:18px 45px;
-background:#8c5a5e;
-color:white;
-text-decoration:none;
-border-radius:40px;
-font-size:24px;
-transition:.3s;
+    display:inline-block;
+    background:#8b4b55;
+    color:white;
+    text-decoration:none;
+    padding:18px 48px;
+    border-radius:50px;
+    font-size:22px;
+    transition:.3s;
 }
 
 .boton:hover{
-background:#6f4448;
+    background:#6d3841;
+    transform:translateY(-3px);
 }
 
-#formulario{
-padding:80px 20px;
-background:white;
-text-align:center;
-}
+@media(max-width:768px){
 
-h2{
-font-family:'Great Vibes',cursive;
-font-size:70px;
-margin-bottom:10px;
-}
+    h1{
+        font-size:78px;
+    }
 
-@media(max-width:700px){
+    h1 span{
+        font-size:52px;
+    }
 
-h1{
-font-size:75px;
-}
+    .intro{
+        font-size:28px;
+    }
 
-.intro{
-font-size:26px;
-}
+    .fecha{
+        font-size:22px;
+    }
 
-.fecha{
-font-size:24px;
-}
+    .lugar{
+        font-size:20px;
+    }
 
-.lugar{
-font-size:22px;
-}
+    .texto{
+        font-size:20px;
+    }
 
-.texto{
-font-size:22px;
-}
-
-.boton{
-font-size:20px;
-padding:15px 35px;
-}
-
-h2{
-font-size:52px;
-}
-
+    .contenido{
+        padding:35px 20px;
+    }
 }
