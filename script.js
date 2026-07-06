@@ -1,30 +1,21 @@
-document.querySelector(".boton").addEventListener("click", function(e){
-    e.preventDefault();
+const boda = new Date("October 24, 2026 11:30:00").getTime();
 
-    document.querySelector("#formulario").scrollIntoView({
-        behavior:"smooth"
-    });
-});
-const fechaBoda = new Date("2026-10-24T00:00:00").getTime();
+function actualizarCuentaAtras(){
 
-function actualizarContador() {
-  const ahora = new Date().getTime();
-  const distancia = fechaBoda - ahora;
+    const ahora = new Date().getTime();
+    const diferencia = boda - ahora;
 
-  const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-  const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-  const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+    const dias = Math.floor(diferencia / (1000*60*60*24));
+    const horas = Math.floor((diferencia % (1000*60*60*24))/(1000*60*60));
+    const minutos = Math.floor((diferencia % (1000*60*60))/(1000*60));
+    const segundos = Math.floor((diferencia % (1000*60))/1000);
 
-  document.getElementById("dias").innerText = dias;
-  document.getElementById("horas").innerText = horas;
-  document.getElementById("minutos").innerText = minutos;
-  document.getElementById("segundos").innerText = segundos;
+    document.getElementById("dias").textContent = dias;
+    document.getElementById("horas").textContent = horas;
+    document.getElementById("minutos").textContent = minutos;
+    document.getElementById("segundos").textContent = segundos;
 
-  if (distancia < 0) {
-    document.querySelector(".contador").innerHTML = "<h2>¡Hoy es el gran día! 💍</h2>";
-  }
 }
 
-setInterval(actualizarContador, 1000);
-actualizarContador();
+actualizarCuentaAtras();
+setInterval(actualizarCuentaAtras,1000);
