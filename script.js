@@ -23,3 +23,25 @@ function copiarIBAN() {
     navigator.clipboard.writeText("ES2220803512713040052990");
     alert("¡IBAN copiado! ❤️");
 }
+
+function descargarWedShoots() {
+
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(ua)) {
+        window.open(
+            "https://play.google.com/store/apps/details?id=net.bodas.android.wedshoots",
+            "_blank"
+        );
+    } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+        window.open(
+            "https://apps.apple.com/es/app/wedshoots/id549402355",
+            "_blank"
+        );
+    } else {
+        window.open(
+            "https://www.wedshoots.com/",
+            "_blank"
+        );
+    }
+}
